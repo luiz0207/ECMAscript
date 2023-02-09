@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="library.js"></script>
+</head>
+<body>
+    <button onclick="moveon()">My firt paragraf</button>
+    <script>
+        function moveon() {
+            var answer = confirm("Ready to move on?");
+            // quando clicar "ok" =, faz o navegador carregar uma nova página
+            if (answer) window.location = "http://google.com";
+        }
+        //Executa a função definida acima por 1 minuto (60.000 milissegundo)
+        setTimeout(moveon, 60000);
+
+    </script>
+    <p>Here is more html</p>
+</body>
+</html>
